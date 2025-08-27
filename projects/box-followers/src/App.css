@@ -1,0 +1,71 @@
+.followerCard{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:#fff;
+  font-size: .8rem;
+}
+
+.followerCard__header{
+  display: flex;
+  align-items: center;
+  gap:12px;
+}
+
+.followerCard__info{
+  display: flex;
+  flex-direction: column;
+}
+
+.followerCard__infoUserName{
+  opacity: .6;
+}
+
+.followerCard__avatar{
+  width: 48px;
+  height: 48px;
+  border-radius: 1000px;
+}
+.followerCard__button{
+  margin-left: 16px;
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #000;
+  transition: .3s ease background-color;
+}
+
+.followerCard__button:hover{
+  opacity: .8;
+}
+
+.followerCard__text{
+  display: block;
+}
+
+.followerCard__button.followerCard__button--following{
+  border:  1px solid #bbb;
+  background:transparent;
+  color: #fff;
+  width: 140px;
+}
+
+.followerCard__button.followerCard__button--following:hover .followerCard__text{
+  display: none;
+}
+
+.followerCard__button.followerCard__button--following:hover{
+  background-color: rgba(255, 0, 0, 0.178);
+  color:red;
+  border: 1px solid red;
+}
+
+.followerCard__button.followerCard__button--following:hover .followerCard__stopFollowing{
+  display: block;
+}
+
+.followerCard__stopFollowing{
+  display: none;
+}
